@@ -123,7 +123,7 @@ class HappyComputing():
                     self.t_tech3 = self.t + generate_repair_time()
                 elif self.t_sptech == math.inf:
                     print('The customer wants a repair so he goes to be attended by the specialized technician')
-                    self.t_tech3 = self.t + generate_repair_time()
+                    self.t_sptech = self.t + generate_repair_time()
                 else:
                     print('The customer wants a repair so he joins the repair queue')
                     self.repair_queue += 1
